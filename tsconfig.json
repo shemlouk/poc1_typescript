@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "module": "ES2020"
+  },
+  "ts-node": {
+    "esm": true
+  }
+}
