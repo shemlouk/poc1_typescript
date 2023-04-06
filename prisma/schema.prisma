@@ -23,6 +23,8 @@ model Task {
   description String
   date        DateTime
   isDone      Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
   roommate    Roommate @relation(fields: [roommateId], references: [id])
   roommateId  Int
 }
