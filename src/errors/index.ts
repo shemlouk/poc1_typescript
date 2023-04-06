@@ -15,4 +15,8 @@ const conflictError = (item: string) => {
   );
 };
 
-export default { createError, conflictError };
+const invalidBody = (message: string) => {
+  return createError("InvalidBody", message, 422);
+};
+
+export default { createError, conflictError, invalidBody };
