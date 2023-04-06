@@ -3,6 +3,6 @@ import { Router } from "express";
 
 const router = Router();
 
-router.use(`/roommate`, roommateRouter);
+router.use(`/roommates`, roommateRouter);
 
 export default router;
