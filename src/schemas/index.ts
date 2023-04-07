@@ -8,6 +8,6 @@ export const roommate = z.object({
 export const tasks = z.object({
   title: z.string(),
   description: z.string(),
-  date: z.date().min(new Date()),
+  date: z.string().transform((str) => new Date(str)),
   roommateId: z.number().int().positive(),
 });
